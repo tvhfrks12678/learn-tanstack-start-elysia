@@ -8,26 +8,46 @@ const PortSchema = Schema.NumberFromString.pipe(
   Schema.between(1, 65535),
 )
 
-const getPort = Effect.gen(function* () {
-  const rawPort = Option.fromNullable(process.env.PORT)
+const parsePort = (raw: string) =>
+  Schema.decode(PortSchema)(raw)
 
-  return yield* Option.match(rawPort, {
-    onNone: () => Effect.succeed(DEFAULT_PORT),
-    onSome: (value) => Schema.decode(PortSchema)(value),
-  })
+const getEnvPort = Effect.sync(() => process.env.PORT)
+
+const port = Effect.gen(function*() {
+  const raw = yield* getEnvPort
+
+  return yield* raw === undefined
+    ? Effect.succeed(DEFAULT_PORT)
+    : parsePort(raw)
 })
 
-const port = Effect.runSync(getPort)
+////
+// const getPort = Effect.gen(function* () {
+//   const rawPort = Option.fromNullable(process.env.PORT)
 
+//   return yield* Option.match(rawPort, {
+//     onNone: () => Effect.succeed(DEFAULT_PORT),
+//     onSome: (value) => Schema.decode(PortSchema)(value),
+//   })
+// })
+
+// const port = Effect.runSync(getPort)
+////
+
+////
 // const portEffect = Option.fromNullable(process.env.PORT).pipe(
-//   Option.match({
+//
+// 
+//    Option.match({
 //     onNone: () => Effect.succeed(DEFAULT_PORT),
 //     onSome: (value) => Schema.decodeUnknown(PortSchema)(value),
 //   })
 // );
 
 // const port = Effect.runSync(portEffect)
+////
 
+////
 // const rawPort = process.env.PORT;
 
 // const portEffect = rawPort
@@ -36,8 +56,9 @@ const port = Effect.runSync(getPort)
 
 // const port = Effect.runSync(portEffect)
 // const port = process.env.PORT ?? DEFAULT_PORT;
+////
 
-const app = new Elysia().get("/", () => "Hello Elysia").listen(port);
+const app = new Elysia().get("/", () => "Hello Elysia!").listen(port);
 
 console.log(
   `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`
