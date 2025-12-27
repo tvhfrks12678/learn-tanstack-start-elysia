@@ -4,17 +4,17 @@ import { Elysia } from "elysia";
 
 const DEFAULT_PORT = 3000;
 
-class InvalidPortError {
+export class InvalidPortError {
   readonly _tag = "InvalidPortError"
   constructor(readonly value: string) {}
 }
 
-const PortSchema = Schema.NumberFromString.pipe(
+export const PortSchema = Schema.NumberFromString.pipe(
   Schema.int(),
   Schema.between(1, 65535),
 )
 
-const parsePort = (raw: string) =>
+export const parsePort = (raw: string) =>
   Schema.decode(PortSchema)(raw).pipe(
     Effect.mapError(() => new InvalidPortError(raw))
   )
