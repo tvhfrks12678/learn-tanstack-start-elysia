@@ -1,0 +1,68 @@
+- プログラミングの学習内容
+  - 新規でアプリを開発するときの技術は何がいいかの検討
+    - https://github.com/tvhfrks12678/learn-tanstack-start-elysia
+      - 言語 TypeScript
+      - フロント TanStack Start
+        - 状態管理
+          - TanStack Query Zustand Jotai
+      - バック Elysia
+      - モバイル Expo
+        - React Native
+      - DB
+        - billions of rows や数百GBを超えるストレージ未満の場合
+          - libSQL
+            - SQLite
+             - デプロイ
+               - Turso
+        - billions of rows や数百GBを超えるストレージ以上の場合
+          - PostgreSQL
+            - デプロイ
+              - Neon
+                - ブランチ機能（Git的）がある
+        - 数千万人規模のユーザーがいる、金融機関並みのコンプライアンスが必要な場合
+          - GCP AlloyDB
+      - 関数型プログラミング effect-ts
+      - デプロイ
+        - ユーザー数1万未満の場合
+          - フロントエンド
+            - Netlify
+          - バックエンド
+            - Vercel
+        - ユーザー数1万以上の場合
+          - Cloud Run
+      - ORM Drizzle ORM
+      - ユーザー認証
+        - MAU < 10,000
+          - 月間のアクティブなユーザ数が10,000未満の場合
+            - Clerk
+              - 無料プラン
+               - 移行できるようにデータベース側に clerk_user_id を保存する設計など
+        - MAU >= 10,000
+          - 月間のアクティブなユーザ数が10,000以上の場合
+            - Clerk
+              - Proプラン、Enterpriseプラン
+            - Auth.jsでセルフホスト
+      - 設計 機能ごとのfeatureディレクトリィでのヘキサゴナルアーキテクチャ(別名ポートアンドアダプター)
+        - ORMの変更やDBをlibSQLから、PostgreSQLに移行した場合にコードの変更を最小限にするため
+      - テスト Vitest PlayWright React Testing Library
+      - 開発 テスト駆動開発 Cursor Antigravity
+      - Monorepo Turborepo
+      - リンター フォーマッター Biome
+      - CSS
+        - ブラウザ
+          - Tailwind
+          - Shadcn
+          - MagicUI
+        - モバイル
+          - NativeWind
+          - React Native Reusables
+      - 生成Ai実装 TanStack AI
+      - データの暗号化 libSQL-Encryption at Rest（ディスク暗号化）
+      - 2Dゲーム
+        - Godot
+      - 3Dゲーム
+        - Unity、Roblox
+      - PCのデスクトップアプリ
+        - Tauri
+      - ブラウザでの3D
+        - Three.js
