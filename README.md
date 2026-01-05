@@ -30,6 +30,11 @@
             - Vercel
         - ユーザー数1万以上の場合
           - Cloud Run
+      - 監視
+        - Mobile
+          - Sentry PostHog
+        - フロント、バック
+          - Highlight.io Better StackのUptime
       - ORM Drizzle ORM
       - ユーザー認証
         - MAU < 10,000
@@ -66,3 +71,4 @@
         - Tauri
       - ブラウザでの3D
         - Three.js
+      
