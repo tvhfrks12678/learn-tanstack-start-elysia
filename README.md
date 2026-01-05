@@ -35,6 +35,8 @@
           - Sentry PostHog
         - フロント、バック
           - Highlight.io Better StackのUptime
+      - メール
+        - SendGrid
       - ORM Drizzle ORM
       - ユーザー認証
         - MAU < 10,000
