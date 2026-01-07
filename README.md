@@ -34,6 +34,8 @@
           - Google AdSense
         - モバイル
           - Google AdMob AppLovin
+      - 決済
+        - Polar
       - 関数型プログラミング effect-ts
       - デプロイ
         - ユーザー数1万未満の場合
