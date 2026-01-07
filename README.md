@@ -29,6 +29,11 @@
             - Bunny Stream
               - PB級ストレージや数百万視聴/月以上の場合
                 - AWS Media Services
+      - 広告
+        - ブラウザ
+          - Google AdSense
+        - モバイル
+          - Google AdMob
       - 関数型プログラミング effect-ts
       - デプロイ
         - ユーザー数1万未満の場合
