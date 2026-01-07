@@ -21,6 +21,14 @@
                 - ブランチ機能（Git的）がある
         - 数千万人規模のユーザーがいる、金融機関並みのコンプライアンスが必要な場合
           - GCP AlloyDB
+      - 画像ストレージ
+        - Cloudflare R2
+      - 動画ストレージ
+        - Cloudinary
+          - 月間ストレージ100-500GB、配信帯域200GB以上の場合
+            - Bunny Stream
+              - PB級ストレージや数百万視聴/月以上の場合
+                - AWS Media Services
       - 関数型プログラミング effect-ts
       - デプロイ
         - ユーザー数1万未満の場合
