@@ -33,7 +33,7 @@
         - ブラウザ
           - Google AdSense
         - モバイル
-          - Google AdMob
+          - Google AdMob AppLovin
       - 関数型プログラミング effect-ts
       - デプロイ
         - ユーザー数1万未満の場合
