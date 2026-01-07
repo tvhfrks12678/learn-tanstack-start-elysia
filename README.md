@@ -36,6 +36,26 @@
           - Google AdMob AppLovin
       - 決済
         - Polar
+      - ジョブキュー
+        - Vercel
+          - Upstash Workflow
+        - Cloud Run
+          - Cloud Tasks
+      - 定期実行（Cron）
+        - Vercel
+          - Vercel Cron
+        - Cloud Run
+          - Google Cloud Scheduler
+      - 全文検索
+        - libSQL
+          - FTS5
+        - PostgreSQL
+          - pg_search
+      - ベクトル検索
+        - libSQL
+          - Native Vector Search
+        - PostgreSQL
+          - pgvector
       - 関数型プログラミング effect-ts
       - デプロイ
         - ユーザー数1万未満の場合
