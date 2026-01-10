@@ -76,7 +76,8 @@
       - 認証
         - MAU < 10,000
           - 月間のアクティブなユーザ数が10,000未満の場合
-            - Clerk Fastify
+            - Clerk
+              - elysia-clerk
               - 無料プラン
                - 移行できるようにデータベース側に clerk_user_id を保存する設計など
         - MAU >= 10,000
