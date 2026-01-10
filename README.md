@@ -73,10 +73,10 @@
       - メール
         - SendGrid
       - ORM Drizzle ORM
-      - ユーザー認証
+      - 認証
         - MAU < 10,000
           - 月間のアクティブなユーザ数が10,000未満の場合
-            - Clerk
+            - Clerk Fastify
               - 無料プラン
                - 移行できるようにデータベース側に clerk_user_id を保存する設計など
         - MAU >= 10,000
@@ -99,13 +99,8 @@
           - NativeWind
           - React Native Reusables
       - 生成Ai実装 TanStack AI
+      - Terminal AI Agent: Aider　Gemini API
       - データの暗号化 libSQL-Encryption at Rest（ディスク暗号化）
-      - 2Dゲーム
-        - Godot
-      - 3Dゲーム
-        - Unity、Roblox
-      - PCのデスクトップアプリ
-        - Tauri
       - ブラウザでの3D
         - Three.js
       
