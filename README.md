@@ -1,5 +1,6 @@
 - プログラミングの学習内容
   - 新規でアプリを開発するときの技術は何がいいかの検討
+    - まだ触ってない技術もメモしています
     - https://github.com/tvhfrks12678/learn-tanstack-start-elysia
       - 言語 TypeScript
       - フロント TanStack Start
@@ -102,10 +103,17 @@
       - 生成Ai実装 TanStack AI
       - Terminal AI Agent: Aider　Gemini API
       - データの暗号化 libSQL-Encryption at Rest（ディスク暗号化）
-      - ブラウザでの3D
-        - Three.js
+      - 3D
+        - Three.js React Three Fiber
       - バージョン管理
         - jujutsu Git
       - キャッシュ
-        - Upstash Redis
+        - Upstash Redis     
+      - 2Dゲーム
+        - Godot
+        - React Native Skia react-native-reanimated Matter.js
+      - 3Dゲーム
+        - Unity、Roblox
+      - PCのデスクトップアプリ
+        - Tauri
       
