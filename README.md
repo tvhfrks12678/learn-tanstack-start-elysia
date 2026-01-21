@@ -88,7 +88,7 @@
       - 設計 機能ごとのfeatureディレクトリィでのヘキサゴナルアーキテクチャ(別名ポートアンドアダプター)
         - ORMの変更やDBをlibSQLから、PostgreSQLに移行した場合にコードの変更を最小限にするため
       - テスト Vitest PlayWright React Testing Library
-      - 開発 テスト駆動開発 Cursor Antigravity
+      - 開発 テスト駆動開発 Cursor Antigravity Agent Skills MCP
       - Monorepo Turborepo
       - リンター フォーマッター Biome
       - CSS
@@ -104,4 +104,8 @@
       - データの暗号化 libSQL-Encryption at Rest（ディスク暗号化）
       - ブラウザでの3D
         - Three.js
+      - バージョン管理
+        - jujutsu Git
+      - キャッシュ
+        - Upstash Redis
       
